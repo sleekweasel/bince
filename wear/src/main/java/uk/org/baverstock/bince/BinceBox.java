@@ -9,7 +9,6 @@ import android.widget.TextView;
 public class BinceBox extends Activity {
 
     private static final String TAG = BinceBox.class.getSimpleName();
-    private TextView mTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +18,8 @@ public class BinceBox extends Activity {
         stub.setOnLayoutInflatedListener(new WatchViewStub.OnLayoutInflatedListener() {
             @Override
             public void onLayoutInflated(WatchViewStub stub) {
-                mTextView = (TextView) stub.findViewById(R.id.text);
-                Log.d(TAG, "TextView: " + mTextView.getText() + " view=" + mTextView);
+//                mTextView = (TextView) stub.findViewById(R.id.text);
+//                Log.d(TAG, "TextView: " + mTextView.getText() + " view=" + mTextView);
             }
         });
     }
