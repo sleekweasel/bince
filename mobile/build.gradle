@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    buildToolsVersion '20.0.0'
+    defaultConfig {
+        applicationId 'uk.org.baverstock.bince'
+        minSdkVersion 15
+        targetSdkVersion '15'
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+    compileSdkVersion 15
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
