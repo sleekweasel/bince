@@ -4,4 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Bouncy"
-    tools:ignore="MergeRootFrame" />
+    tools:ignore="MergeRootFrame"
+    >
+    <uk.org.baverstock.bince.BincePong
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </FrameLayout>
