@@ -4,10 +4,10 @@ android {
     buildToolsVersion '20.0.0'
     defaultConfig {
         applicationId 'uk.org.baverstock.bince'
-        minSdkVersion 15
-        targetSdkVersion '15'
-        versionCode 1
-        versionName '1.0'
+        minSdkVersion 10
+        targetSdkVersion 10
+        versionCode 2
+        versionName '1.1'
     }
     buildTypes {
         release {
@@ -17,9 +17,10 @@ android {
     }
     productFlavors {
     }
-    compileSdkVersion 15
+    compileSdkVersion 10
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    wearApp project(':wear')
 }
